@@ -168,6 +168,11 @@ p {
   flex-wrap: wrap;
   background-color: #F6F6F6;
 }
+@media (max-width: 500px) {
+  .navbar {
+    padding: 15px 0;
+  }
+}
 .navbar h1 {
   font-size: 3.5rem;
   width: 100%;
@@ -182,6 +187,11 @@ p {
   margin: auto;
   font: #454A59;
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .navbar nav {
+    width: 100%;
+  }
 }
 footer {
   color: #22283B;

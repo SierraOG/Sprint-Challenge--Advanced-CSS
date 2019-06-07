@@ -4,6 +4,9 @@
     padding: 15px 20%;
     .flex-box(space-between, wrap);
     background-color: @nav-bg;
+    @media @phone{
+        padding: 15px 0;
+    }
     h1{
         font-size:3.5rem;
         width:100%;
@@ -16,5 +19,8 @@
         margin: auto;
         font: @river-bend;
         font-size: 1.5rem;
+        @media @phone{
+            width:100%;
+        }
     }
 }
