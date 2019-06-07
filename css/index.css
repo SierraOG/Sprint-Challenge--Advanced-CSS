@@ -1,3 +1,35 @@
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -161,6 +193,7 @@ p {
   margin: 0 auto;
 }
 .navbar {
+  z-index: 100;
   width: 100%;
   padding: 15px 20%;
   display: flex;
@@ -208,12 +241,7 @@ footer {
   align-items: center;
 }
 .home {
-  /* Add styles to the form container */
-  /* Full-width input fields */
-  /* When the inputs get focus, do something */
-  /* Set a style for the submit button */
-  /* Add a red background color to the cancel button */
-  /* Add some hover effects to buttons */
+  /* popup form */
 }
 .home .intro img {
   border-radius: 10px;
@@ -383,4 +411,28 @@ footer {
 .home .form-container .btn2:hover,
 .home .btn:hover {
   opacity: 1;
+}
+.blog .stars,
+.blog .twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.blog .stars {
+  background: black url(../img/stars.JPG) repeat top center;
+  z-index: -5;
+}
+.blog .twinkling {
+  background: transparent url(../img/twinkling2.png) repeat top center;
+  z-index: -1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
 }
