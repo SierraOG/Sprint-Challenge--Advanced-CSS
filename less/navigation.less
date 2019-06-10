@@ -1,1 +1,31 @@
 // Navigation code here
+.navbar{
+    z-index: 100;
+    width:100%;
+    padding: 15px 20%;
+    .flex-box(space-between, wrap);
+    background-color: @nav-bg;
+    @media @phone{
+        padding: 15px 0;
+    }
+    h1{
+        font-size:3.5rem;
+        width:100%;
+        text-align: center;
+    }
+    nav{
+        width:60%;
+        .flex-box(space-between, nowrap);
+        padding: 1% 10%;
+        margin: auto;
+        font: @river-bend;
+        font-size: 1.5rem;
+        @media @phone{
+            width:100%;
+        }
+        a{
+            text-decoration: none;
+            color: @main-font-color;
+        }
+    }
+}
